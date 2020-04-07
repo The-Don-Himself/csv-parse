@@ -1,0 +1,40 @@
+{
+    "name": "the-don-himself/email-csv-parse",
+    "description": "A small script that parse a typical CSV containing names and email addresses.",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "symfony/console": "^5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Don Omondi",
+            "email": "don.e.omondi@gmail.com"
+        }
+    ],
+    "keywords": [
+        "Twitter",
+        "graph",
+        "Amazon Neptune",
+        "Azure Cosmos DB",
+        "Datastax Enterprise Graph",
+        "JanusGraph",
+        "Neo4j",
+        "Neo4j",
+        "OrientDB",
+        "gremlin-php",
+        "gremlin-ogm"
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheDonHimself\\EmailCsvParse\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "bin": ["bin/parse", "bin/parse.php"]
+}
