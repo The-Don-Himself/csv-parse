@@ -1,6 +1,6 @@
 <?php
 
-namespace TheDonHimself\EmailCsvParse\Commands;
+namespace TheDonHimself\CsvParse\Commands;
 
 use RuntimeException;
 use Symfony\Component\Console\Command\Command;
@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
-use TheDonHimself\EmailCsvParse\Services\CsvParse;
+use TheDonHimself\CsvParse\Services\CsvParse;
 
 class ParseCommand extends Command
 {

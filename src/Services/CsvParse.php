@@ -1,6 +1,6 @@
 <?php
 
-namespace TheDonHimself\EmailCsvParse\Services;
+namespace TheDonHimself\CsvParse\Services;
 
 class CsvParse
 {

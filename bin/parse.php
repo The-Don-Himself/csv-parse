@@ -1,7 +1,7 @@
 <?php
 
 use Symfony\Component\Console\Application;
-use TheDonHimself\EmailCsvParse\Commands\ParseCommand;
+use TheDonHimself\CsvParse\Commands\ParseCommand;
 
 $autoloadFiles = array(__DIR__ . '/../vendor/autoload.php',
                        __DIR__ . '/../../../autoload.php');

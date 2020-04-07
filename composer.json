@@ -1,6 +1,6 @@
 {
-    "name": "the-don-himself/email-csv-parse",
-    "description": "A small script that parse a typical CSV containing names and email addresses.",
+    "name": "the-don-himself/csv-parse",
+    "description": "A small script that parse a typical CSV into a multidimensional array.",
     "type": "library",
     "require": {
         "php": "^7.2",
@@ -14,21 +14,11 @@
         }
     ],
     "keywords": [
-        "Twitter",
-        "graph",
-        "Amazon Neptune",
-        "Azure Cosmos DB",
-        "Datastax Enterprise Graph",
-        "JanusGraph",
-        "Neo4j",
-        "Neo4j",
-        "OrientDB",
-        "gremlin-php",
-        "gremlin-ogm"
+        "CSV"
     ],
     "autoload": {
         "psr-4": {
-            "TheDonHimself\\EmailCsvParse\\": "src/"
+            "TheDonHimself\\CsvParse\\": "src/"
         }
     },
     "minimum-stability": "stable",
