@@ -8,6 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
+use TheDonHimself\EmailCsvParse\Services\CsvParse;
 
 class ParseCommand extends Command
 {
@@ -24,9 +25,20 @@ class ParseCommand extends Command
         $io = new SymfonyStyle($input, $output);
         $io->title('Parse the CSV File');
 
-        $configPath = $io->ask('Enter the path to a CSV file', null, function ($input_path) {
-            return $input_path;
+        $filePath = $io->ask('Enter the path to a CSV file', null, function ($inputPath) {
+            if (null === $inputPath) {
+                throw new RuntimeException('A path to a CSV File is required!');
+            }
+
+            return $inputPath;
         });
+
+        $output->writeln('Parsing CSV...');
+
+        $csvParse = new CsvParse();
+        $data = $csvParse->parse($filePath);
+
+        $output->writeln('Parsed ' . count($data) . ' records');
 
         return 0;
     }
